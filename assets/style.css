@@ -1,0 +1,35 @@
+:root {
+    --noir: #000;
+    --blanc: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--noir);
+    width: 100vw;
+    height: 20vh;
+    color: var(--blanc);
+    display: flex;
+    flex-flow: column;
+}
+
+.menu_wrap {
+    align-self: flex-end;
+    display: block;
+    right: 0px;
+} 
+
+.menu_list {
+    list-style: none;
+    display: flex;
+    width: 60vw;
+    justify-content: space-around;
+}
+
+.menu {
+    display: inline-flex;
+    margin: 10px;
+}
