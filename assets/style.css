@@ -8,9 +8,13 @@
     box-sizing: border-box;
 }
 
-.header {
-    background-color: var(--noir);
+body {
     width: 100vw;
+}
+
+header {
+    background-color: var(--noir);
+    width: 100%;
     height: 20vh;
     color: var(--blanc);
     display: flex;
@@ -44,6 +48,7 @@
     animation-duration: 1s;
     animation-timing-function: ease-out;
     animation-iteration-count: 1;
+    border-radius: 20px;
 }
 
 @keyframes menuAnimation {
@@ -51,6 +56,22 @@
     to { opacity: 100% }
 }
 
-content {
-    width: 100vw;
+main {
+    width: 100%;
+    background-color: var(--noir);
+    opacity: 30%;
+    padding: 2%;
+}
+
+main div {
+    /* opacity: 100%; */
+    color: var(--blanc);
+    margin: 0 5%;
+}
+
+footer {
+    width: 100%;
+    height: 15vh;
+    background-color: var(--noir);
+    position: sticky bottom;
 }
