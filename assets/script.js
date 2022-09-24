@@ -1,5 +1,6 @@
 let menuBtn = document.querySelectorAll('.menu')
 let sections = document.querySelectorAll('main > div')
+let btnPfl = document.querySelectorAll('.btn')
 
 menuBtn.forEach(btn => {
     btn.addEventListener('mouseenter', () => {
@@ -18,5 +19,12 @@ menuBtn.forEach(btn => {
                 selectedSection.style.display = 'block'
             }
         })
+    })
+})
+
+btnPfl.forEach(btn => {
+    btn.addEventListener('click', () => {
+        let selectedSection = document.querySelector(`.${btn.textContent}`)
+        
     })
 })

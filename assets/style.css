@@ -58,8 +58,7 @@ header {
 
 main {
     width: 100%;
-    background-color: var(--noir);
-    opacity: 30%;
+    background-color: var(--blanc);
     padding: 2%;
 }
 
@@ -67,6 +66,29 @@ main div {
     /* opacity: 100%; */
     color: var(--blanc);
     margin: 0 5%;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3% 5%;
+}
+
+.btn {
+    color: var(--blanc);
+    width: 100%;
+    padding: 5%;
+    background-color: var(--noir);
+}
+
+.btn:hover {
+    background-color: var(--rouge);
+}
+
+h2 {
+    text-transform: uppercase;
 }
 
 footer {
