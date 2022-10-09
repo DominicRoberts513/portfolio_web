@@ -9,7 +9,7 @@
 }
 
 body {
-  width: 100vw;
+  height: 100vh;
 }
 
 header {
@@ -73,15 +73,40 @@ header {
   }
 }
 main {
-  width: 100%;
+  height: 100%;
   background-color: var(--blanc);
   padding: 2%;
+  display: flex;
 }
 
 main div {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
   /* opacity: 100%; */
-  color: var(--blanc);
+  color: var(--noir);
   margin: 0 5%;
+}
+
+.accueil {
+  width: 100vw;
+  display: grid;
+  gap: 5%;
+  grid-template-areas: "no1 no1 no2 no2" "no1 no1 no2 no2" "no1 no1 no3 no3";
+}
+.accueil div {
+  width: 100%;
+  grid-area: no1;
+}
+.accueil div {
+  width: 100%;
+  grid-area: no2;
+}
+.accueil div {
+  width: 100%;
+  grid-area: no3;
 }
 
 .portfolio {
